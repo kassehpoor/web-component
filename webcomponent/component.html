@@ -10,14 +10,15 @@
 
 <body>
     <script src="component.js"></script>
-    <toggle-btn id='tb1' text="oooooh" value="true" valueChanged="doSomething()">
+    <toggle-btn id='tb1' text="oooooh" value="true" onvaluechanged="doSomething()">
     </toggle-btn>
 
     <script>
 
-        //document.getElementById('tb1').addEventListener('valueChanged', doSomething);
+        // document.getElementById('tb1').addEventListener('valueChanged', doSomething);
         function doSomething() {
             console.log(arguments);
+            alert('you did something');
         }
     </script>
 </body>
